@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divyanshu Singh | Personal Profile</title>
+    <meta name="description" content="Personal profile website of Divyanshu Singh, a B.Tech Computer Science Engineering student interested in programming, web development, artificial intelligence, and modern technology." />
+    <meta name="keywords" content="Divyanshu Singh, B.Tech Computer Science, Web Development, Programming, Portfolio, Student Profile, React, Python, Artificial Intelligence" />
+    <meta name="author" content="Divyanshu Singh" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Divyanshu Singh | Personal Profile" />
+    <meta property="og:description" content="Personal profile website of Divyanshu Singh, a B.Tech Computer Science Engineering student interested in programming, web development, artificial intelligence, and modern technology." />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Divyanshu Singh | Personal Profile" />
+    <meta name="twitter:description" content="Personal profile website of Divyanshu Singh, a B.Tech Computer Science Engineering student interested in programming, web development, artificial intelligence, and modern technology." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data (JSON-LD) for Academic Profile -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Divyanshu Singh",
+        "jobTitle": "B.Tech Computer Science Engineering Student",
+        "sameAs": [
+          "https://www.linkedin.com/in/divyanshu-singh-a063452b8?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+          "https://github.com/Divyanshu-702"
+        ],
+        "description": "Personal profile website of Divyanshu Singh, a B.Tech Computer Science Engineering student interested in programming, web development, artificial intelligence, and modern technology.",
+        "knowsAbout": [
+          "Web Development",
+          "Programming",
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Software Development",
+          "React.js",
+          "Node.js",
+          "Python",
+          "Java"
+        ]
+      }
+    </script>
+    <!-- Script to prevent theme flash -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || (!saved && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
